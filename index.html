@@ -420,8 +420,11 @@
 
     // 2. Cek apakah ada data username di URL
     if (username) {
-        // 3. Jika ada, ganti tulisan "Belum login" menjadi nama user
-        document.getElementById('statusLogin').textContent = "Halo, " + username;
+        // GANTI DI SINI: 'statusLogin' diubah menjadi 'userInfo'
+        document.getElementById('userInfo').textContent = "Halo, " + username;
+        
+        // Tambahan: menyembunyikan tombol login kotak biar makin rapi
+        document.getElementById('authArea').style.display = 'none';
     }
 </script>
        <script src="login/js/welcome.js"></script>
