@@ -602,14 +602,14 @@ body {
     }
 }
 
-#message{
+.message{
 background: #ff4e4e;
 color: white;
 text-align: center;
 margin-top: 20px;
 }
 
-#alertBox{
+.alertBox{
 position: fixed;
 top: 20px;
 left: 50%;
