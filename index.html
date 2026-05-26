@@ -44,6 +44,7 @@
         
         <li class="nav-item d-flex align-items-center ml-md-3">
           <p id="userInfo" class="mb-0 text-white mr-3">Belum login</p>
+		  <span id="statusLogin">Belum login</span>
           <div id="authArea">
            <button onclick="window.location.href='loginn/index.html'" class="nav-cta">Login</button>
           </div>
@@ -413,6 +414,17 @@
         ]
         });
       });
+		<script>
+    // 1. Ambil parameter dari URL (misal: ?username=heri&password=123)
+    const urlParams = new URLSearchParams(window.location.search);
+    const username = urlParams.get('username');
+
+    // 2. Cek apakah ada data username di URL
+    if (username) {
+        // 3. Jika ada, ganti tulisan "Belum login" menjadi nama user
+        document.getElementById('statusLogin').textContent = "Halo, " + username;
+    }
+</script>
        <script src="login/js/welcome.js"></script>
   </body>
   </html>
