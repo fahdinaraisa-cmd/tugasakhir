@@ -419,6 +419,7 @@ figure.effect-honey:hover h2 i {
   background-image: url(../img/bg-jogja-02.jpg);
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover; /* Taruh di baris baru di sini */
   min-height: 850px;
   position: relative;
   padding-bottom: 50px;
