@@ -132,7 +132,7 @@ a:focus {
 /* Hero */
 
 #hero {
-  background-image: url("../img/Apakah Benar Kota Jogja Sebagai Kota Yang Paling Menarik_.jpg");
+  background-image: url(..img/bg-jogja-01.jpg);
   background-repeat: no-repeat;
   height: 100vh;
   min-height: 375px;
