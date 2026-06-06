@@ -411,20 +411,17 @@
         ]
         });
       });
-		<script>
-    // 1. Ambil parameter dari URL (misal: ?username=heri&password=123)
+	}); 
+</script> <script>
     const urlParams = new URLSearchParams(window.location.search);
     const username = urlParams.get('username');
 
-    // 2. Cek apakah ada data username di URL
     if (username) {
-        // GANTI DI SINI: 'statusLogin' diubah menjadi 'userInfo'
         document.getElementById('userInfo').textContent = "Halo, " + username;
-        
-        // Tambahan: menyembunyikan tombol login kotak biar makin rapi
         document.getElementById('authArea').style.display = 'none';
     }
 </script>
-       <script src="login/js/welcome.js"></script>
+
+<script src="login/js/welcome.js"></script>
   </body>
   </html>
